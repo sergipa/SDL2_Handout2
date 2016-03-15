@@ -1,9 +1,11 @@
 #include "Application.h"
 #include "ModuleWindow.h"
+#include "ModuleRenderer.h"
 
 Application::Application()
 {
 	modules[0] = win = new ModuleWindow();
+	modules[1] = rend = new ModuleRenderer();
 }	
 
 bool Application::Init()

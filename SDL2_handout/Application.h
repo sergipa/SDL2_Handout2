@@ -4,9 +4,10 @@
 #include "Globals.h"
 #include "Module.h"
 
-#define NUM_MODULES 1
+#define NUM_MODULES 2
 
 class ModuleWindow;
+class ModuleRenderer;
 
 class Application
 {
@@ -14,6 +15,7 @@ public:
 
 	Module* modules[NUM_MODULES];
 	ModuleWindow* win;
+	ModuleRenderer* rend;
 
 public:
 
